@@ -1,0 +1,13 @@
+{
+  "otdq": {
+    "min_size": 15,
+    "n_q": 1000,
+    "var_thresh": 0.0001,
+    "flat_alpha": 5.0,
+    "window_size": 15,
+    "texture_pct": 40.0,
+    "halo_pct": 90.0,
+    "patch_window": 32,
+    "resize_method": "LANCZOS"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "table_steps": [
+    {
+      "name": "dhq",
+      "argv": [
+        "scripts/evaluate_dhq.py",
+        "--dhq-csv",
+        "data/DHQ/comparison.csv",
+        "--dhq-root",
+        "data/DHQ",
+        "--compute-otdq",
+        "--output-dir",
+        "outputs/dhq"
+      ]
+    },
+    {
+      "name": "paired",
+      "argv": [
+        "scripts/evaluate_paired_benchmark.py",
+        "--manifest",
+        "data/paired_manifest.csv",
+        "--output-dir",
+        "outputs/paired"
+      ]
+    },
+    {
+      "name": "bootstrap",
+      "argv": [
+        "scripts/bootstrap_analysis.py",
+        "--csv",
+        "outputs/dhq/dhq_scores_with_otdq.csv",
+        "--group-col",
+        "Haze_name",
+        "--target-col",
+        "MOS_Mean",
+        "--metric-cols",
+        "otdq",
+        "niqe",
+        "brisque",
+        "fade",
+        "--output-dir",
+        "outputs/bootstrap"
+      ]
+    }
+  ]
+}
