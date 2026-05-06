@@ -78,9 +78,20 @@ The pair-aware advantage is clearer for intra-image preference ranking, where de
 
 Paired-bootstrap comparisons report two-sided p-values of 0.018, 0.040, 0.002, and 0.002 for `Acc_w`, `Acc_5`, `Acc_10`, and `Acc_15`, respectively.
 
-![DHQ global MOS consistency](assets/dhq_global_mos.png)
-
-![DHQ pairwise preference accuracy](assets/dhq_pairwise.png)
+<table>
+  <tr>
+    <td align="center">
+      <img src="assets/dhq_global_mos.png" alt="DHQ global MOS consistency" width="100%">
+      <br>
+      <sub>Global MOS consistency</sub>
+    </td>
+    <td align="center">
+      <img src="assets/dhq_pairwise.png" alt="DHQ pairwise preference accuracy" width="100%">
+      <br>
+      <sub>Intra-image pairwise preference accuracy</sub>
+    </td>
+  </tr>
+</table>
 
 ### Paired Benchmark Consistency
 
