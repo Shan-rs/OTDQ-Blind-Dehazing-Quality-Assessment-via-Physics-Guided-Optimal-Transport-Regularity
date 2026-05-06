@@ -46,22 +46,6 @@ Higher values indicate stronger agreement with the proposed dehazing-quality cri
 
 ![OTDQ pipeline](assets/otdq_pipeline.png)
 
-### Flowchart
-
-```mermaid
-flowchart LR
-    A[Hazy image I] --> B[Input validation and RGB normalization]
-    C[Dehazed image J_hat] --> B
-    B --> D[Atmospheric-light anchor from hazy image]
-    D --> E1[S_vis: transport regularity + slope factor + haze-aware SDC]
-    B --> E1
-    B --> E2[S_str: gradient direction + local gain smoothness + flat-region penalty]
-    B --> E3[S_arti: halo + over-darkening + patchiness]
-    E1 --> F[Power-weighted geometric fusion]
-    E2 --> F
-    E3 --> F
-    F --> G[OTDQ score and component scores]
-```
 
 ## Key Experimental Results
 
