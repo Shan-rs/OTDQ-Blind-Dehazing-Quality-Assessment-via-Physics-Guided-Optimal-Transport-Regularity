@@ -340,9 +340,3 @@ The core fusion follows the implementation in `OTDQ.py`:
 ```text
 OTDQ = S_vis^1.00 * S_str^0.50 * S_arti^0.50
 ```
-
-## Notes for Anonymous Release
-
-- Keep datasets and generated result folders outside the repository or under ignored `data/` and `outputs/`.
-- Do not commit local absolute paths, private dataset links, or author-identifying metadata.
-- Add a license file before public release if redistribution terms need to be explicit.
