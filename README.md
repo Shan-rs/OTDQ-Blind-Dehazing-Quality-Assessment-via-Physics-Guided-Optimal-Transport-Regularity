@@ -24,8 +24,6 @@ Anonymous evaluation toolkit for OTDQ, a no-clear-reference dehazing quality sco
 └── pyproject.toml
 ```
 
-No datasets, dehazing outputs, author information, or local absolute paths are included.
-
 ## Method Overview
 
 OTDQ is an input-aware blind dehazing quality metric. It scores a dehazed output together with its hazy input, but does not require a clear reference, MOS label, depth map, transmission map, or learned feature extractor. The main idea is that dehazing should not behave like arbitrary contrast enhancement: under the atmospheric scattering model, a locally valid restoration should induce a regular, approximately monotone affine redistribution from hazy intensities to dehazed intensities while preserving scene structure and avoiding common dehazing artifacts.
